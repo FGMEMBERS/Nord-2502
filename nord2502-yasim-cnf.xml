@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+Noratlas Nord 2502
+BARANGER Emmanuel 2010
+************************************************************************
+-->
+
+<PropertyList include="noratlas-base.xml">
+
+  <sim>
+
+    <description>Noratlas Nord 2502 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>nord2502-yasim</aero>
+
+    <model>
+      <path>Aircraft/Nord-2502/Models/nor2502.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/Nord-2502/splash/nord2502-splash.png</splash-texture>
+    </startup>
+
+  </sim>
+    
+</PropertyList>

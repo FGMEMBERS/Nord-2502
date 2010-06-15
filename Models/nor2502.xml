@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/noratlas.xml</path>
+    <offsets>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Les réacteurs -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/jets.xml</path>
+    <offsets>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Une ombre pour OSG
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/Nord-2502/Models/shadow2502.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowOSG</object-name>
+    <condition>
+      <equals>
+        <property>sim[0]/rendering/shadows-ai</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation> -->
+
+</PropertyList>
