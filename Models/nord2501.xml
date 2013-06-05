@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/noratlas.xml</path>
+  </model>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/shadow2501.xml</path>
+    <offsets>
+      <x-m> -0.13051 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -2.70000 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  -3.65045 </x-m>
+      <y-m> -15.91526 </y-m>
+      <z-m>   0.93054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -3.67881 </x-m>
+      <y-m> -15.83621 </y-m>
+      <z-m>   0.93054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -3.65045 </x-m>
+      <y-m> 15.91526 </y-m>
+      <z-m>  0.93054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -3.67881 </x-m>
+      <y-m> 15.83621 </y-m>
+      <z-m>  0.93054 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

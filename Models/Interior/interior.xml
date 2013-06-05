@@ -7,16 +7,18 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
-    <object-name>tour</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourG</object-name>
+    <object-name>intporteG</object-name>
+    <object-name>inttourD</object-name>
+    <object-name>intporteD</object-name>
     <object-name>cockpit</object-name>
     <object-name>planchet</object-name>
-    <object-name>intporteG</object-name>
-    <object-name>inttourG</object-name>
-    <object-name>intporteD</object-name>
-    <object-name>inttourD</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
+    <object-name>intvitreporteG</object-name>
+    <object-name>intvitreporteD</object-name>
   </animation>
 
   <animation>
@@ -24,7 +26,7 @@
     <object-name>intvitres</object-name>
   </animation>
 
-    <animation>
+  <animation>
     <type>shader</type>
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
@@ -35,9 +37,9 @@
   <model>
     <path>Aircraft/Nord-2502/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -9.500 </x-m>
+      <x-m> -9.770 </x-m>
       <y-m> -0.551 </y-m>
-      <z-m> -0.456 </z-m>
+      <z-m> -0.500 </z-m>
     </offsets>
   </model>
 
@@ -45,9 +47,9 @@
   <model>
     <path>Aircraft/Nord-2502/Models/Interior/seat/seat.xml</path>
     <offsets>
-      <x-m> -9.563 </x-m>
+      <x-m> -9.663 </x-m>
       <y-m> -0.550 </y-m>
-      <z-m> -0.483 </z-m>
+      <z-m> -0.550 </z-m>
     </offsets>
   </model>
 
@@ -55,9 +57,9 @@
   <model>
     <path>Aircraft/Nord-2502/Models/Interior/seat/seat.xml</path>
     <offsets>
-      <x-m> -9.563 </x-m>
+      <x-m> -9.663 </x-m>
       <y-m>  0.550 </y-m>
-      <z-m> -0.483 </z-m>
+      <z-m> -0.600 </z-m>
     </offsets>
   </model>
 
@@ -83,15 +85,30 @@
 
   <!-- Portes arrières -->
   <animation>
-    <name>PorteGauche</name>
+    <name>IntPorteGauche</name>
     <object-name>intporteG</object-name>
     <object-name>inttourG</object-name>
+    <object-name>intvitreporteG</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
   </animation>
   
   <animation>
     <type>rotate</type>
-    <object-name>PorteGauche</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <object-name>IntPorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 80 </factor>
     <center>
       <x-m>  2.182 </x-m>
@@ -106,15 +123,30 @@
   </animation>
 
   <animation>
-    <name>PorteDroite</name>
+    <name>IntPorteDroite</name>
     <object-name>intporteD</object-name>
     <object-name>inttourD</object-name>
+    <object-name>intvitreporteD</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
   </animation>
   
   <animation>
     <type>rotate</type>
-    <object-name>PorteDroite</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <object-name>IntPorteDroite</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 80 </factor>
     <center>
       <x-m>  2.182 </x-m>
@@ -129,4 +161,3 @@
   </animation>
 
 </PropertyList>
-

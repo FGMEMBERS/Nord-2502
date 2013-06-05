@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-************************************************************************
-Noratlas Nord 2501
-BARANGER Emmanuel 2010
-************************************************************************
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- ************************************************************************
+       Noratlas Nord 2501
+       BARANGER Emmanuel 2010
+     ************************************************************************
 -->
 
 <PropertyList include="noratlas-base.xml">
@@ -11,11 +11,12 @@ BARANGER Emmanuel 2010
   <sim>
 
     <description>Noratlas Nord 2501 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), Slowman (PANEL/Liveries)</author>
     <flight-model>yasim</flight-model>
     <aero>nord2501-yasim</aero>
 
     <model>
-      <path>Aircraft/Nord-2502/Models/nor2501.xml</path>
+      <path>Aircraft/Nord-2502/Models/nord2501.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>

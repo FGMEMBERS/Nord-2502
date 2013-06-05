@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>clock.ac</path>
+
+  <animation>
+    <object-name>Clock.fond</object-name>
+    <object-name>Clock.face</object-name>
+    <object-name>Clock.needle</object-name>
+    <object-name>Clock.HrHand</object-name>
+    <object-name>Clock.MnHand</object-name>
+    <object-name>Clock.ScHand</object-name>
+    <object-name>Clock.knob</object-name>
+
+    <object-name>Clock.vitre</object-name>
+ </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Clock.vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>Clock.vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>Clock.vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>Clock.face</object-name>
+    <object-name>Clock.ScHand</object-name>
+    <object-name>Clock.MnHand</object-name>
+    <object-name>Clock.HrHand</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   0.80 </red>
+      <green> 0.50 </green>
+      <blue>  0.50 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Clock.ScHand</object-name>
+    <property>/instrumentation/clock/indicated-sec</property>
+    <factor> 6 </factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Clock.MnHand</object-name>
+    <property>/instrumentation/clock/indicated-sec</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Clock.HrHand</object-name>
+    <property>/instrumentation/clock/indicated-sec</property>
+    <factor> 0.008333 </factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
