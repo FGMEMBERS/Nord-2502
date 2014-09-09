@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>GearIndicator.ac</path>
+
+  <animation>
+    <object-name>Nose</object-name>
+    <object-name>Left</object-name>
+    <object-name>Right</object-name>
+    <object-name>GearTransitLight</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Nose</object-name>
+    <condition>
+      <greater-than>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 0.9 </value>
+      </greater-than>
+    </condition>
+    <emission>
+      <red>   0.2 </red>
+      <green> 0.6 </green>
+      <blue>  0.2 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Left</object-name>
+    <condition>
+      <greater-than>
+        <property>gear/gear[1]/position-norm</property>
+        <value> 0.9 </value>
+      </greater-than>
+    </condition>
+    <emission>
+      <red>   0.2 </red>
+      <green> 0.6 </green>
+      <blue>  0.2 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Right</object-name>
+    <condition>
+      <greater-than>
+        <property>gear/gear[2]/position-norm</property>
+        <value> 0.9 </value>
+      </greater-than>
+    </condition>
+    <emission>
+      <red>   0.2 </red>
+      <green> 0.6 </green>
+      <blue>  0.2 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>GearTransitLight</object-name>
+    <condition>
+      <greater-than>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 0.01 </value>
+      </greater-than>
+      <less-than>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 0.99 </value>
+      </less-than>
+      <and>
+        <greater-than>
+          <property>gear/gear[1]/position-norm</property>
+          <value> 0.01 </value>
+        </greater-than>
+        <less-than>
+          <property>gear/gear[1]/position-norm</property>
+          <value> 0.99 </value>
+        </less-than>
+      </and>
+      <and>
+        <greater-than>
+          <property>gear/gear[2]/position-norm</property>
+          <value> 0.01 </value>
+        </greater-than>
+        <less-than>
+          <property>gear/gear[2]/position-norm</property>
+          <value> 0.99 </value>
+        </less-than>
+      </and>
+    </condition>
+    <emission>
+      <red>   0.40 </red>
+      <green> 0.04 </green>
+      <blue>  0.04 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

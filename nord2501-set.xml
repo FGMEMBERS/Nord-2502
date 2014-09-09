@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- <PropertyList include="nord2501-jsbsim-cnf.xml"> -->
+<PropertyList include="nord2501-yasim-cnf.xml">
+
+  <sim>
+
+    <description>Noratlas Nord 2501 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), Slowman (PANEL/Liveries)</author>
+
+    <rating>
+      <FDM type="int">     1 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
+

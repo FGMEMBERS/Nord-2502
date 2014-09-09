@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/noratlas.xml</path>
+  </model>
+
+  <!-- Les réacteurs -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/jets.xml</path>
+  </model>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/shadow2502.xml</path>
+    <offsets>
+      <x-m> -0.13051 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -2.70000 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/Effects/smoke/smokeL.xml</path>
+    <offsets>
+      <x-m>  -1.38405 </x-m>
+      <y-m> -15.62267 </y-m>
+      <z-m>   0.92518 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Nord-2502/Models/Effects/trail/trailL.xml</path>
+    <offsets>
+      <x-m>  -1.38405 </x-m>
+      <y-m> -15.62267 </y-m>
+      <z-m>   0.92518 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/Nord-2502/Models/Effects/smoke/smokeR.xml</path>
+    <offsets>
+      <x-m> -1.38405 </x-m>
+      <y-m> 15.62267 </y-m>
+      <z-m>  0.92518 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Nord-2502/Models/Effects/trail/trailR.xml</path>
+    <offsets>
+      <x-m> -1.38405 </x-m>
+      <y-m> 15.62267 </y-m>
+      <z-m>  0.92518 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m>  -3.50243 </x-m>
+      <y-m> -16.03601 </y-m>
+      <z-m>   0.92518 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -3.52243 </x-m>
+      <y-m> -16.03601 </y-m>
+      <z-m>   0.92518 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -3.50243 </x-m>
+      <y-m> 16.03601 </y-m>
+      <z-m>  0.92518 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Nord-2502/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -3.52243 </x-m>
+      <y-m> 16.03601 </y-m>
+      <z-m>  0.92518 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
