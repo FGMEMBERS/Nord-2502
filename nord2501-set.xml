@@ -7,6 +7,7 @@
 
     <description>Noratlas Nord 2501 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), Slowman (PANEL/Liveries)</author>
+    <variant-of>nord2502</variant-of>
 
     <rating>
       <FDM type="int">     1 </FDM>
@@ -18,4 +19,3 @@
   </sim>
 
 </PropertyList>
-
